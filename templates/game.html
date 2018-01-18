@@ -2,23 +2,62 @@
 <html>
 <head>
   <title>Play game</title>
+  <style>
+    form{
+      margin: 50px;
+      font-family: sans-serif;
+      font-size: 20px;
+
+    }
+    span{
+      font-size: 30px;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: purple;
+    }
+    #button {
+    background-color: purple; 
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    #button {
+        background-color: white; 
+        color: black; 
+        border: 2px solid purple;
+    }
+    #button:hover {
+        background-color: purple;
+        color: white;
+    }
+
+  </style>
 </head>
 <body>
     <form action="/madlib">
-        Please enter:<br>
-       <p>Person:    <input type="text" name="person"></p>
-       <p>Color:     <select name="color">
-                        <option value="color">Color</option>
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
-                        <option value="pink">Pink</option>
-                        <option value="grey">Grey</option> <
-                    </select>
+        <span>Please enter:</span><br>
+       <p>Person: <input type="text" name="person"></p>
+       <p>Color: <select name="color">
+                  <option value="color">Color</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                  <option value="pink">Pink</option>
+                  <option value="grey">Grey</option> 
+                 </select>
         </p>
-       <p>Noun:      <input type="text" name="noun"></p>
-       <p>Adjective: <input type="text" name="adjective"></p>
-       <input type="submit">
+       <p>Noun 1: <input type="text" name="noun1"></p>
+       <p>Noun 2: <input type="text" name="noun2"></p>
+       <p>Adjective 1: <input type="text" name="adjective1"></p>
+       <p>Adjective 2: <input type="text" name="adjective2"></p>
+       <input id="button" type="submit">
     </form>
 </body>
 </html>

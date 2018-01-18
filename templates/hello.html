@@ -2,6 +2,41 @@
 <html>
 <head>
   <title>Hi There!</title>
+  <style>
+    h1{
+        color: purple;
+        font-family: sans-serif;
+        font-size: 50px;
+        margin: 50px;
+    }
+    form{
+        font-family: sans-serif;
+        font-size: 20px;
+        margin: 50px;
+    }
+    #button {
+    background-color: purple; 
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    #button {
+        background-color: white; 
+        color: black; 
+        border: 2px solid purple;
+    }
+    #button:hover {
+        background-color: purple;
+        color: white;
+    }
+  </style>
 </head>
 <body>
 
@@ -9,7 +44,7 @@
 
 <form action="/greet">
   What is your name? <input type="text" name="person">
-  <input type="submit">
+  <input id="button" type="submit">
 </form>
 
 </body>

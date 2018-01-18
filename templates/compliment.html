@@ -2,14 +2,50 @@
 <html>
 <head>
   <title>A Compliment</title>
+  <style>
+    body{
+        margin: 50px;
+        font-size: 20px;
+        font-family: sans-serif;        
+    }
+    span{
+      font-weight: bold;
+      color: purple;
+      font-style: italic;
+
+    }
+    #button {
+    background-color: purple; 
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    #button {
+        background-color: white; 
+        color: black; 
+        border: 2px solid purple;
+    }
+    #button:hover {
+        background-color: purple;
+        color: white;
+    }
+
+  </style>
 </head>
 <body>
-    Hi {{ person }}! I think you're {{ compliment }}!
+    Hi <span>{{ person }}!</span> I think you're <span>{{ compliment }}!</span>
     <form action="/game">
         Would you like to play a madlib game?
        <input type="radio" name="game" value="yes">Yes
        <input type="radio" name="game" value="no">No
-       <input type="submit">
+       <input id="button" type="submit">
     </form>
 </body>
 </html>
